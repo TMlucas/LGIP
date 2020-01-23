@@ -14,8 +14,13 @@ def clic(event):
         texte.set("C'est gagné")
         canvas.create_rectangle((500/h)*(X-1)+1,(500/w)*(Y-1)+1,(500/h)*X-1,(500/w)*Y-1,fill='red')
     else:
-        canvas.create_rectangle((500/h)*(X-1)+1,(500/w)*(Y-1)+1,(500/h)*X-1,(500/w)*Y-1,fill='black')
-        if abs(X-lm)==1 and abs(Y-cm)==1:
+        cmp,lmp=False,False
+        canvas.create_rectangle((500/h)*(X-1)+1,(500/w)*(Y-1)+1,(500/h)*X>
+        if abs(X-lm)==1 or abs(X-lm)==0:
+            lmp=True
+        if abs(Y-cm)==1 or abs(Y-cm)==0:
+            cmp=True
+        if lmp ==True and cmp ==True:
             texte.set("C'est proche")
         else:
             texte.set("C'est loin")
