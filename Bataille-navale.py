@@ -49,7 +49,7 @@ titre = Label (main, text="Bienvenue dans le jeu de la bataille navale")
 titre.pack()
 titre.configure(font=font28)
 
-canvas = Canvas(main, width=500, height=500, background='blue')
+canvas = Canvas(main, width=500, height=500, background='blue', cursor="pirate")
 canvas.pack(padx=10, pady=50)
 for i in range (1, w):
     canvas.create_rectangle(i*500/(w),0,i*500/(w),500,fill='brown')
