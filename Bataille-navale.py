@@ -23,7 +23,7 @@ def clic(event):
 
 #Taille du tableau
 try:
-    print ("Entrez la taille de la tablette de chocolat\n(Maximum 10 par 10)\n")
+    print ("Entrez la taille de l'océan\n(Maximum 10 par 10)\n")
     h=int(input("Entrer la largeur : "))
     w=int(input("Entrer la longueur : "))
     if h>10 or w>10:
